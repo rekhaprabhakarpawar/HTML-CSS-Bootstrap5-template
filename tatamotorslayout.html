@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container-fluid {
+        background-color: #1d1d1d;
+      }
+      .content {
+        background-color: #1d1d1d;
+      }
+      .content h2 {
+        font-size: 46px;
+        color: red;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h4 {
+        background-color: red;
+      }
+      .read-more > span {
+        transition: 1s;
+      }
+      .read-more:hover > span {
+        margin-left: 20px;
+      }
+      .brand {
+        background-color: #1d1d1d;
+        width: 600px;
+        height: 500px;
+        position: absolute;
+      }
+      .dash span:hover {
+        color: brown;
+        border-bottom: 10px solid brown;
+      }
+      h5:hover {
+        background-color: red;
+      }
+      div > label {
+        border-bottom: 2px solid gray;
+        width: 170px;
+        padding-bottom: 15px;
+      }
+      pre:hover {
+        border-bottom: 5px sold red;
+      }
+      div a:hover{
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="container-fluid">
+        <nav
+          class="nav"
+          style="background-color: #0b0b0b; color: white; height: 80px"
+        >
+          <div class="col-3" style="font-size: 30px; margin-left: 90px">
+            <img
+              src="https://cars.tatamotors.com/images/tata-motors-logo.png"
+            />
+          </div>
+          <div
+            class="col-6"
+            style="justify-content: space-around; font-size: 22px"
+          >
+            <a href="#" style="margin-left: 30px"
+              >Brand<select
+                style="background-color: #1d1d1d; color: white"
+              ></select
+            ></a>
+            <a href="#" style="margin-left: 30px"
+              >Concep<select
+                style="background-color: #1d1d1d; color: white"
+              ></select
+            ></a>
+            <a href="#" style="margin-left: 30px"
+              >Owner<select
+                style="background-color: #1d1d1d; color: white"
+              ></select
+            ></a>
+            <a href="#" style="margin-left: 30px"
+              >Shopping<select
+                style="background-color: #1d1d1d; color: white"
+              ></select
+            ></a>
+          </div>
+
+          <div class="col-2" style="font-size: 30px; margin-left: 20px">
+            <img src="https://cars.tatamotors.com/images/tata-logo.png" />
+          </div>
+        </nav>
+      </div>
+      <div class="row">
+        <div
+          class="container-fluid"
+          style="
+            color: white;
+            font-size: 18px;
+            height: 40px;
+            background-color: gray;
+          "
+        >
+          <div class="dash">
+            <span style="margin-left: 120px">Overview</span>
+            <span style="margin-left: 20px">Dark</span>
+            <span style="margin-left: 20px">Feature</span>
+            <span style="margin-left: 20px">Feature</span>
+            <span style="margin-left: 20px">Specication</span>
+            <span style="margin-left: 20px">Variant</span>
+            <span style="margin-left: 20px">Colour</span>
+            <span style="margin-left: 20px">Prize</span>
+            <span style="margin-left: 20px">Gallery</span>
+            <span style="margin-left: 20px">Download</span>
+            <span style="margin-left: 20px">Testmonial</span>
+            <span style="margin-left: 20px">Testdrive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="container-fluid">
+      <section class="row">
+        <div class="col-12">
+          <div
+            id="carouselExample"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner" style="height: 80vh">
+              <div class="carousel-item active h-100" data-bs-interval="1000">
+                <img
+                  src="https://cars.tatamotors.com/images/reddark/harrier-red-dark-desktop-banner.png"
+                  class="d-block w-100 h-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="2000">
+                <img
+                  src="https://cars.tatamotors.com/images/harrier/harrier-desktop-banner-feb-2023.jpg"
+                  class="d-block w-100 h-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="5000">
+                <img
+                  src="https://cars.tatamotors.com/images/harrier/harrier-desktop-banner-feb-2023.jpg"
+                  class="d-block w-100 h-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="6000">
+                <img
+                  src=" https://cars.tatamotors.com/images/reddark/harrier-red-dark-desktop-banner.png"
+                  class="d-block w-100 h-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="row">
+      <div class="container-fluid">
+        <div class="" style="background-color: #1d1d1; color: white">
+          <p
+            style="
+              margin-left: 60px;
+              height: 100px;
+              padding-top: 40px;
+              padding-bottom: 60px;
+              font-size: 18px;
+            "
+          >
+            Born of legendary Land Rover pedigree, the All New-Harrier is now
+            available with an advanced 6 Speed Automatic Transmission, packed
+            with a host of exciting features and advanced enhancements.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid">
+        <div
+          class="col"
+          style="background-color: #0b0b0b; display: inline-flex"
+        >
+          <div class="col" style="margin-left: 180px; margin-right: 700px">
+            <h2 style="color: white">TATA HARRIER</h2>
+            <br />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAhCAMAAACGE/kZAAABGlBMVEUAAAD8yQD/1QD7yQD+0AD/0wD/1wD4wQD3wAD/1AD4wQD5xAD9zAD/0gD4wQD8ygD8zAD7xwD4wQD4wgD/0gD5xQD7ygD8ygD/0wD5wwD5xAD/1AD4wwD/1QD7xwD9zQD/0gD8zAD+0AD2vAD/2QD/1AD9zgD4wAD9zwD4wgD8ygD/1AD/0AD/1AD/1AD/0gD/1AD4wgD9zAD4wQD/1AD6xwD/0gD/0gD/1AD4wgD7xwD6xwD9zgD3wAD5xQD8ygD8ywD3vwD+0AD4wgD/0gD/0gD4wgD/1gD4wgD7yQD4wgD4wgD/0gD/0gD3vwD/1QD3vwD/1QD3vwD4wgD/0gD/1QD3vwD6yAD3vgD+zwD1vAD5xAD8ygD/2gDCBLnEAAAAU3RSTlMA8vz4+Vr9Wv38+vkQ+oIV+vXtMf78+/nt0ohgXE41HAX+/Pz6+fj39O/b1sW9ta6cnI55cm9lVlRPSEM9Ofru6efk2NDNzcm5rKulk4BUKyEJCdUzG/cAAAGhSURBVDjLhdJ3U4MwGAZwIIi0FDvsstZa99571L23vnkToPX7fw0TWusVOPP8wSXcjzyX99BiOf3UlPlaflejFt9VoxG+pkaX3MiozCgr47iyjem4qkJjAhUzijZgukEPFG0h2lC0hYj+25eBLpqIvD9+Hern8NELEa6+DcvU6+KxU29qjbE2n/IpilCKxBMITWAAjDFo845fDY/dEbsSr0xPpxAtEuQt0w6YDSUyZbqIm7/3vpaf2ek8yZlzRF9cSBOy6KYMRFo91PrZAhkJIb98XnTFmVRmfeCaR0tdFpRyF3rOQhom+tNMPgjjObnZMjFnHFOyldOEYXtA3G9zJj9bCdKkiJtNLSEnvoWuE+iW4XgM9rTETCC1enNKA4wkoxuK83Y4caviwVKimaQ05TCJxOKMwXESGhdlNgDjSKksfE5Ca7IMYKG2IiZkEK+QYLIURRncfWjNDXFUClgjjvaxLEytu5aFbCuO1n0GhaPepnFLkRfibXNt9pT9278gtluxu3W8wRkfVP1aFF0VRqP/+z3PRia5ndVi2T7pLX4AoNNZm5UIGQkAAAAASUVORK5CYII="
+              alt=""
+              title=""
+              width="36"
+              height="33"
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAhCAMAAACGE/kZAAABGlBMVEUAAAD8yQD/1QD7yQD+0AD/0wD/1wD4wQD3wAD/1AD4wQD5xAD9zAD/0gD4wQD8ygD8zAD7xwD4wQD4wgD/0gD5xQD7ygD8ygD/0wD5wwD5xAD/1AD4wwD/1QD7xwD9zQD/0gD8zAD+0AD2vAD/2QD/1AD9zgD4wAD9zwD4wgD8ygD/1AD/0AD/1AD/1AD/0gD/1AD4wgD9zAD4wQD/1AD6xwD/0gD/0gD/1AD4wgD7xwD6xwD9zgD3wAD5xQD8ygD8ywD3vwD+0AD4wgD/0gD/0gD4wgD/1gD4wgD7yQD4wgD4wgD/0gD/0gD3vwD/1QD3vwD/1QD3vwD4wgD/0gD/1QD3vwD6yAD3vgD+zwD1vAD5xAD8ygD/2gDCBLnEAAAAU3RSTlMA8vz4+Vr9Wv38+vkQ+oIV+vXtMf78+/nt0ohgXE41HAX+/Pz6+fj39O/b1sW9ta6cnI55cm9lVlRPSEM9Ofru6efk2NDNzcm5rKulk4BUKyEJCdUzG/cAAAGhSURBVDjLhdJ3U4MwGAZwIIi0FDvsstZa99571L23vnkToPX7fw0TWusVOPP8wSXcjzyX99BiOf3UlPlaflejFt9VoxG+pkaX3MiozCgr47iyjem4qkJjAhUzijZgukEPFG0h2lC0hYj+25eBLpqIvD9+Hern8NELEa6+DcvU6+KxU29qjbE2n/IpilCKxBMITWAAjDFo845fDY/dEbsSr0xPpxAtEuQt0w6YDSUyZbqIm7/3vpaf2ek8yZlzRF9cSBOy6KYMRFo91PrZAhkJIb98XnTFmVRmfeCaR0tdFpRyF3rOQhom+tNMPgjjObnZMjFnHFOyldOEYXtA3G9zJj9bCdKkiJtNLSEnvoWuE+iW4XgM9rTETCC1enNKA4wkoxuK83Y4caviwVKimaQ05TCJxOKMwXESGhdlNgDjSKksfE5Ca7IMYKG2IiZkEK+QYLIURRncfWjNDXFUClgjjvaxLEytu5aFbCuO1n0GhaPepnFLkRfibXNt9pT9278gtluxu3W8wRkfVP1aFF0VRqP/+z3PRia5ndVi2T7pLX4AoNNZm5UIGQkAAAAASUVORK5CYII="
+              alt=""
+              title=""
+              width="36"
+              height="33"
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAhCAMAAACGE/kZAAABGlBMVEUAAAD8yQD/1QD7yQD+0AD/0wD/1wD4wQD3wAD/1AD4wQD5xAD9zAD/0gD4wQD8ygD8zAD7xwD4wQD4wgD/0gD5xQD7ygD8ygD/0wD5wwD5xAD/1AD4wwD/1QD7xwD9zQD/0gD8zAD+0AD2vAD/2QD/1AD9zgD4wAD9zwD4wgD8ygD/1AD/0AD/1AD/1AD/0gD/1AD4wgD9zAD4wQD/1AD6xwD/0gD/0gD/1AD4wgD7xwD6xwD9zgD3wAD5xQD8ygD8ywD3vwD+0AD4wgD/0gD/0gD4wgD/1gD4wgD7yQD4wgD4wgD/0gD/0gD3vwD/1QD3vwD/1QD3vwD4wgD/0gD/1QD3vwD6yAD3vgD+zwD1vAD5xAD8ygD/2gDCBLnEAAAAU3RSTlMA8vz4+Vr9Wv38+vkQ+oIV+vXtMf78+/nt0ohgXE41HAX+/Pz6+fj39O/b1sW9ta6cnI55cm9lVlRPSEM9Ofru6efk2NDNzcm5rKulk4BUKyEJCdUzG/cAAAGhSURBVDjLhdJ3U4MwGAZwIIi0FDvsstZa99571L23vnkToPX7fw0TWusVOPP8wSXcjzyX99BiOf3UlPlaflejFt9VoxG+pkaX3MiozCgr47iyjem4qkJjAhUzijZgukEPFG0h2lC0hYj+25eBLpqIvD9+Hern8NELEa6+DcvU6+KxU29qjbE2n/IpilCKxBMITWAAjDFo845fDY/dEbsSr0xPpxAtEuQt0w6YDSUyZbqIm7/3vpaf2ek8yZlzRF9cSBOy6KYMRFo91PrZAhkJIb98XnTFmVRmfeCaR0tdFpRyF3rOQhom+tNMPgjjObnZMjFnHFOyldOEYXtA3G9zJj9bCdKkiJtNLSEnvoWuE+iW4XgM9rTETCC1enNKA4wkoxuK83Y4caviwVKimaQ05TCJxOKMwXESGhdlNgDjSKksfE5Ca7IMYKG2IiZkEK+QYLIURRncfWjNDXFUClgjjvaxLEytu5aFbCuO1n0GhaPepnFLkRfibXNt9pT9278gtluxu3W8wRkfVP1aFF0VRqP/+z3PRia5ndVi2T7pLX4AoNNZm5UIGQkAAAAASUVORK5CYII="
+              alt=""
+              title=""
+              width="36"
+              height="33"
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAhCAMAAACGE/kZAAABGlBMVEUAAAD8yQD/1QD7yQD+0AD/0wD/1wD4wQD3wAD/1AD4wQD5xAD9zAD/0gD4wQD8ygD8zAD7xwD4wQD4wgD/0gD5xQD7ygD8ygD/0wD5wwD5xAD/1AD4wwD/1QD7xwD9zQD/0gD8zAD+0AD2vAD/2QD/1AD9zgD4wAD9zwD4wgD8ygD/1AD/0AD/1AD/1AD/0gD/1AD4wgD9zAD4wQD/1AD6xwD/0gD/0gD/1AD4wgD7xwD6xwD9zgD3wAD5xQD8ygD8ywD3vwD+0AD4wgD/0gD/0gD4wgD/1gD4wgD7yQD4wgD4wgD/0gD/0gD3vwD/1QD3vwD/1QD3vwD4wgD/0gD/1QD3vwD6yAD3vgD+zwD1vAD5xAD8ygD/2gDCBLnEAAAAU3RSTlMA8vz4+Vr9Wv38+vkQ+oIV+vXtMf78+/nt0ohgXE41HAX+/Pz6+fj39O/b1sW9ta6cnI55cm9lVlRPSEM9Ofru6efk2NDNzcm5rKulk4BUKyEJCdUzG/cAAAGhSURBVDjLhdJ3U4MwGAZwIIi0FDvsstZa99571L23vnkToPX7fw0TWusVOPP8wSXcjzyX99BiOf3UlPlaflejFt9VoxG+pkaX3MiozCgr47iyjem4qkJjAhUzijZgukEPFG0h2lC0hYj+25eBLpqIvD9+Hern8NELEa6+DcvU6+KxU29qjbE2n/IpilCKxBMITWAAjDFo845fDY/dEbsSr0xPpxAtEuQt0w6YDSUyZbqIm7/3vpaf2ek8yZlzRF9cSBOy6KYMRFo91PrZAhkJIb98XnTFmVRmfeCaR0tdFpRyF3rOQhom+tNMPgjjObnZMjFnHFOyldOEYXtA3G9zJj9bCdKkiJtNLSEnvoWuE+iW4XgM9rTETCC1enNKA4wkoxuK83Y4caviwVKimaQ05TCJxOKMwXESGhdlNgDjSKksfE5Ca7IMYKG2IiZkEK+QYLIURRncfWjNDXFUClgjjvaxLEytu5aFbCuO1n0GhaPepnFLkRfibXNt9pT9278gtluxu3W8wRkfVP1aFF0VRqP/+z3PRia5ndVi2T7pLX4AoNNZm5UIGQkAAAAASUVORK5CYII="
+              alt=""
+              title=""
+              width="36"
+              height="33"
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAhCAMAAACGE/kZAAABGlBMVEUAAAD8yQD/1QD7yQD+0AD/0wD/1wD4wQD3wAD/1AD4wQD5xAD9zAD/0gD4wQD8ygD8zAD7xwD4wQD4wgD/0gD5xQD7ygD8ygD/0wD5wwD5xAD/1AD4wwD/1QD7xwD9zQD/0gD8zAD+0AD2vAD/2QD/1AD9zgD4wAD9zwD4wgD8ygD/1AD/0AD/1AD/1AD/0gD/1AD4wgD9zAD4wQD/1AD6xwD/0gD/0gD/1AD4wgD7xwD6xwD9zgD3wAD5xQD8ygD8ywD3vwD+0AD4wgD/0gD/0gD4wgD/1gD4wgD7yQD4wgD4wgD/0gD/0gD3vwD/1QD3vwD/1QD3vwD4wgD/0gD/1QD3vwD6yAD3vgD+zwD1vAD5xAD8ygD/2gDCBLnEAAAAU3RSTlMA8vz4+Vr9Wv38+vkQ+oIV+vXtMf78+/nt0ohgXE41HAX+/Pz6+fj39O/b1sW9ta6cnI55cm9lVlRPSEM9Ofru6efk2NDNzcm5rKulk4BUKyEJCdUzG/cAAAGhSURBVDjLhdJ3U4MwGAZwIIi0FDvsstZa99571L23vnkToPX7fw0TWusVOPP8wSXcjzyX99BiOf3UlPlaflejFt9VoxG+pkaX3MiozCgr47iyjem4qkJjAhUzijZgukEPFG0h2lC0hYj+25eBLpqIvD9+Hern8NELEa6+DcvU6+KxU29qjbE2n/IpilCKxBMITWAAjDFo845fDY/dEbsSr0xPpxAtEuQt0w6YDSUyZbqIm7/3vpaf2ek8yZlzRF9cSBOy6KYMRFo91PrZAhkJIb98XnTFmVRmfeCaR0tdFpRyF3rOQhom+tNMPgjjObnZMjFnHFOyldOEYXtA3G9zJj9bCdKkiJtNLSEnvoWuE+iW4XgM9rTETCC1enNKA4wkoxuK83Y4caviwVKimaQ05TCJxOKMwXESGhdlNgDjSKksfE5Ca7IMYKG2IiZkEK+QYLIURRncfWjNDXFUClgjjvaxLEytu5aFbCuO1n0GhaPepnFLkRfibXNt9pT9278gtluxu3W8wRkfVP1aFF0VRqP/+z3PRia5ndVi2T7pLX4AoNNZm5UIGQkAAAAASUVORK5CYII="
+              alt=""
+              title=""
+              width="36"
+              height="33"
+            />
+            <h3 style="color: wheat">₹15.00 - 24.00 Lakh*</h3>
+            <p style="color: wheat">*Ex Showroom price in New Delhi</p>
+          </div>
+
+          <div class="col">
+            <h5
+              style="
+                color: white;
+                border: 2px solid;
+                margin-top: 30px;
+                height: 40px;
+                width: 300px;
+                margin-right: 20px;
+              "
+            >
+              Get the best offer
+            </h5>
+            <h5
+              style="
+                color: white;
+                border: 2px solid;
+                margin-top: 40px;
+                height: 40px;
+                width: 300px;
+              "
+            >
+              Book the test drive
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid" style="background-color: #1d1d1">
+        <div class="" style="color: white">
+          <span style="margin-left: 100px; font-size: 25px">
+            Request a Call back</span
+          ><br />
+          <label style="color: white; margin-left: 100px">Name</label>
+          <label style="color: white; margin-left: 200px">Email</label>
+          <label style="color: white; margin-left: 200px">Mobile</label>
+          <label style="color: white; margin-left: 200px">Pincode</label>
+        </div>
+        <input
+          type="checkbox"
+          style="color: white; margin-left: 100px; margin-top: 50px"
+        />
+        <h6 style="color: wheat; margin-left: 110px">
+          I agree to the Terms and Conditions & Privacy policy by Tata Motors.
+        </h6>
+
+        <br />
+        <input type="checkbox" style="color: red; margin-left: 100px" />
+        <h6 style="color: wheat; margin-left: 110px">
+          Subscribe with Whatsapp
+        </h6>
+        <button
+          style="
+            color: white;
+            margin-left: 600px;
+            width: 350px;
+            height: 40px;
+            background-color: red;
+            margin-bottom: 50px;
+          "
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid" style="background-color: #0b0b0b">
+        <div class="" style="color: white">
+          <h3 style="margin-left: 100px">Explore Key Highlights</h3>
+          <hr size="4" />
+          <img
+            style="margin-left: 60px"
+            src="https://cars.tatamotors.com/images/harrier/harrier-video-img-new.jpg"
+          />
+          <h3 style="margin-left: 100px">Harrier Key Features</h3>
+          <hr size="4" />
+        </div>
+      </div>
+    </div>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-7 image pe-0">
+          <img
+            class="img-fluid w-100"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg_gEuxTlSy35oksbLsfooFVbyixjDVLp3YA&usqp=CAU"
+            alt=""
+          />
+        </div>
+
+        <div class="col-12 col-md-5 content">
+          <h2 class="text-uppercase">ADAS</h2>
+          <p class="text-white">
+            What is ADAS? ADAS or Advanced Driver Assistance System refers to a
+            suite of features that are designed to improve the safety and
+            convenience of driving a vehicle. So how does ADAS work in a car?
+            ADAS technology uses sensors, cameras, and radar among other systems
+            to monitor the environment around a vehicle.
+          </p>
+          <p class="text-white read-more">More about<span>-></span></p>
+          <h4 class="text-uppercase text-white">adas</h4>
+        </div>
+      </div>
+      <!--ROW END-->
+      <div class="row last">
+        <div class="col-12 col-md-5 content order-last order-md-first">
+          <h2 class="text-uppercase">STUNNING IMPACT DESIGN 2.0</h2>
+          <p class="text-white">
+            Based on the Impact Design 2.0 philosophy, with strong proportions
+            and expressive surfaces providing an incredible stance, powerful
+            road presence and a sense of dynamism, Harrier is truly Above All.
+          </p>
+          <p class="text-white read-more">More about<span>-></span></p>
+          <h4 class="text-uppercase text-white">Design</h4>
+        </div>
+        <div class="col-12 col-md-7 image pe-0">
+          <img
+            class="img-fluid w-100"
+            src="https://cars.tatamotors.com/images/harrier/Automatic-headlamps.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-7 image pe-0">
+          <img
+            class="img-fluid w-100"
+            src="https://cars.tatamotors.com/images/harrier/6_speed_manual_transmission.png"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-md-5 content">
+          <h2 class="text-uppercase">EXHILARATING PERFORMANCE</h2>
+          <p class="text-white">
+            With 6 speed Automatic/6 speed Manual Transmission mated to the next
+            generation Kryotec 170 Turbocharged BS6 Phase 2 Diesel engine makes
+            for an effortless driving experience.
+          </p>
+          <p class="text-white read-more">More about<span>-></span></p>
+          <h4 class="text-uppercase text-white">Performance</h4>
+        </div>
+      </div>
+      <!--ROW END-->
+      <div class="row last">
+        <div class="col-12 col-md-5 content order-last order-md-first">
+          <h2 class="text-uppercase">PEDIGREE OF OMEGARC</h2>
+          <p class="text-white">
+            Based on the OMEGA Architecture, with the rich pedigree of Land
+            Rover’s legendary D8 platform running through its veins, the Harrier
+            is a cut Above All.
+          </p>
+          <p class="text-white read-more">More about<span>-></span></p>
+          <h4 class="text-uppercase text-white">adas</h4>
+        </div>
+        <div class="col-12 col-md-7 image pe-0">
+          <img
+            class="img-fluid w-100"
+            src="https://cars.tatamotors.com/images/harrier/pedigree-of-omega-arc.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <div class="row">
+      <div class="container">
+        <div class="row" style="">
+          <span
+            style="
+              margin-left: 140px;
+              margin-right: 70px;
+              justify-content: space-around;
+              font-size: 30px;
+              margin-top: 50px;
+              border-bottom: 2px solid red;
+            "
+          >
+            <span style="margin-right: 70px"> Manual</span> Automatic</span
+          >
+          <pre
+            style="
+              margin-left: 140px;
+              margin-right: 70px;
+              justify-content: space-around;
+              font-size: 25px;
+              margin-top: 20px;
+              border-bottom: 2px solid red;
+              text-decoration: none;
+            "
+          >
+HARRIER XMAS               DISEL           ₹ 19 00 000            <a href="" 
+style="margin-left: 60px; text-decoration: none;">Get the best offer</a></pre>
+          <pre
+            style="
+              margin-left: 140px;
+              margin-right: 70px;
+              justify-content: space-around;
+              font-size: 25px;
+              margin-top: 20px;
+              border-bottom: 2px solid red;
+              text-decoration: none;
+            "
+          >
+HARRIER XMAS               DISEL           ₹ 19 00 000            <a href="" style="margin-left: 60px; text-decoration: none;">Get the best offer</a></pre>
+          <pre
+            style="
+              margin-left: 140px;
+              margin-right: 70px;
+              justify-content: space-around;
+              font-size: 25px;
+              margin-top: 20px;
+              border-bottom: 2px solid red;
+              text-decoration: none;
+            "
+          >
+HARRIER XMAS               DISEL           ₹ 19 00 000            <a href="" style="margin-left: 60px; text-decoration: none;">Get the best offer</a></pre>
+
+          <pre
+            style="
+              margin-left: 140px;
+              margin-right: 70px;
+              justify-content: space-around;
+              font-size: 25px;
+              margin-top: 20px;
+              border-bottom: 2px solid red;
+              text-decoration: none;
+            "
+          >
+HARRIER XMAS               DISEL           ₹ 19 00 000            <a href="" style="margin-left: 60px; text-decoration: none;">Get the best offer</a></pre>
+
+          <pre
+            style="
+              margin-left: 140px;
+              margin-right: 70px;
+              justify-content: space-around;
+              font-size: 25px;
+              margin-top: 20px;
+              border-bottom: 2px solid red;
+              text-decoration: none;
+            "
+          >
+HARRIER XMAS               DISEL           ₹ 19 00 000            <a href="" style="margin-left: 60px; text-decoration: none;">Get the best offer</a></pre>
+
+          <pre
+            style="
+              margin-left: 140px;
+              margin-right: 70px;
+              justify-content: space-around;
+              font-size: 25px;
+              margin-top: 20px;
+              border-bottom: 2px solid red;
+              text-decoration: none;
+            "
+          >
+HARRIER XMAS               DISEL           ₹ 19 00 000            <a href="" style="margin-left: 60px; text-decoration: none;">Get the best offer</a></pre>
+          <pre
+            style="
+              margin-left: 140px;
+              margin-right: 70px;
+              justify-content: space-around;
+              font-size: 25px;
+              margin-top: 20px;
+              border-bottom: 2px solid red;
+              text-decoration: none;
+            "
+          >
+HARRIER XMAS               DISEL           ₹ 19 00 000            <a href="" style="margin-left: 60px; text-decoration: none;">Get the best offer</a></pre>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid" style="background-color: #0b0b0b">
+        <div class="" style="color: white">
+          <h3 style="margin-left: 100px">Harrier Colour Variants</h3>
+          <hr size="4" />
+          <img
+            style="margin-left: 60px"
+            src="https://cars.tatamotors.com/images/harrier/color/oberon-black-d-color-banner.jpg"
+          />
+
+          <hr size="4" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid">
+        <div class="col" style="display: inline-flex">
+          <img
+            style="width: 300px"
+            src="https://cars.tatamotors.com/images/harrier/color/oberon-black-thumb.jpg"
+          />
+          <img
+            style="width: 300px"
+            src="https://cars.tatamotors.com/images/harrier/color/royale-blue-harrier-thumb.jpg"
+          />
+          <img
+            style="width: 300px"
+            src="https://cars.tatamotors.com/images/harrier/color/Calypso-Red-Thumbnail.jpg"
+          />
+          <img
+            style="width: 300px"
+            src="https://cars.tatamotors.com/images/harrier/color/royale-blue-harrier-thumb.jpg"
+          />
+          <img
+            style="width: 300px"
+            src="https://cars.tatamotors.com/images/harrier/color/harrier-tropical-mist-thumb.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid" style="margin-top: 40px">
+        <div class="" style="background-color: #1d1d1; color: white">
+          <p
+            style="
+              margin-left: 60px;
+              height: 100px;
+              padding-top: 40px;
+              padding-bottom: 60px;
+              font-size: 18px;
+            "
+          >
+            The ex-showroom price of Tata Harrier ranges from ₹ 15.00 Lakh to ₹
+            24.00 Lakh. Tata Harrier is available in 2 options - manual and
+            automatic. Select your preferred city (Delhi, Mumbai, Pune, Chennai,
+            Kolkata, Bangalore) from the above menu to know the Tata Harrier
+            Price....
+          </p>
+          <button style="margin-left: 60px">Read More</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid">
+        <div class=""></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid" style="background-color: #0b0b0b">
+        <div class="" style="display: inline-flex">
+          <div class="col-4" style="margin-top: 30px">
+            <a
+              style="margin-left: 60px; color: red; font-size: 22px"
+              href="tel:9512127979"
+            >
+              Missed Call Number: 9512127979</a
+            >
+
+            <a
+              style="margin-left: 60px; color: red; font-size: 22px"
+              href="tel:9512127979"
+            >
+              Missed Call Number: 9512127979</a
+            >
+
+            <a
+              style="margin-left: 60px; color: red; font-size: 22px"
+              href="tel:9512127979"
+            >
+              Missed Call Number: 9512127979</a
+            >
+          </div>
+          <div class="col-5" style="margin-top: 40px;">
+
+          <a href="/terms-of-use"> Terms &amp; Conditions </a> |
+          <a href="/privacy-policy">Privacy Policy</a>
+        </div>
+        <div class="col-3" style="margin-top: 40px">
+          <a
+            href="https://www.facebook.com/officialtatamotorscars/"
+            target="_blank"
+            rel="nofollow"
+            onclick="CommonDataLayer('SUVS','HARRIER','SocialShare_Facebook')"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAAAAAAeW/F+AAABK0lEQVQokb3SIYiEQBQGYIsgx4YrkyzCwsEGi4jNZNi4ZTm2mDduMmzdsH3hkvHapQXBIAh7IJYLJtMlYZAJgwzzGAYxnVeuOBrv1Y83b94/o2n/VoYV7MMwPDi6Up3zA8Mg6fVJoSv7UmPKgLObis1TARJo2zQXQ8H2HYMgVf4R71Wz3aKDvjr6rm2qbuaVDPpsrV5K17xPykViabriaAM9b8uOQ+YjhFYTXh+jt2/Gobqdo8if9O9qOq4MwCgl5DpZ7EAGKQSAlHLo40ksu7ol3W93izGehurGSYEZyCZPk/fXyWzkB6eKgijDYOtbqs2dB+WQKBP74/Rljt2RRbpZYIAlHkNNFlks8PjeC7O9Lw4yn+eiYwvdTkZod98o//hYOjJNE82pqn4A472g3EFsbQkAAAAASUVORK5CYII="
+              alt=""
+              title=""
+              width="30"
+              height="30"
+              target="_blank"
+            />
+          </a>
+          <a
+            href="https://twitter.com/TataMotors_Cars/"
+            target="_blank"
+            rel="nofollow"
+            onclick="CommonDataLayer('SUVS','HARRIER','SocialShare_Twitter')"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAAAAAAeW/F+AAABrElEQVQokc2SIajCQBjHFw4GSwuGC0sG08BmsJnEIBgsBoNgMJjkwSuCYSAMYcVkeEFYeSaLQYO8YhAEQRgIY8gD4RAOjuO45bfdblMfppfeHxbuft/3/b/79inKv5KWg1AHigLAS1oejEctQ1EgFGdgFEu5jMLOx+50XA1b9U5VXKg1a1rTJM019phQSi6H9WaYVOttz3PJQWOFWMg4I/gaOBLvsO+2TT0+vF8JEwqJZyXF65+IoYNTNXRNd8KEMn5bNKVf90Tozf9y7X5nKSmjQR/KpzS2V8pCis67jUeoxF7SuAKKb5sgdqQkkqQMHyoJViszH9OoW8Z55MyZiEDbcppt+SI5jhBfLH9mylGoZVdwRillIjeK3HdhOki95gY4NaUigC9NNRu0bvkZFiLftpZRAKeIJFmJOceLxsPv1Ouzw+VG0oExfLw7i3xztPEJlwbkOCn8WoKCdcKcCk7Ok/y9L8WotAdDe32Ji/MwvG5HpcfCpcHSQ/GbozXAKFj2jCfffMv1os4jiC77ea8En3dQM5vv9sRxnMl42K08tSwLADUReL29f9QP6/5AhZlh6+gAAAAASUVORK5CYII="
+              alt=""
+              title=""
+              width="30"
+              height="30"
+              target="_blank"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/tataharrier/"
+            target="_blank"
+            rel="nofollow"
+            onclick="CommonDataLayer('SUVS','HARRIER','SocialShare_Instagram')"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAAAAAAeW/F+AAAB/klEQVQokbWSLajqUBzAh3DCgrBkMBmEFWFBLAsLFqtBUCyC3CA3iGHFIAiCgsFieMkiGOQG4RYfCEsDwxjiYGUMxjjI4HAYY0fM9+zDr/fgtfdjGzv8zv9j/zOG+d/kqo1m44VWu91qVHOJzHBNxblA6FIgxYU+IdhV6olnm18OeiMISYidbTPW2ZHpX6+EEPqIrhD+Xm92BjYniZ5awTWB0F0hPtayXHGB4TzRExpNY2lcpMllL9CGhtiZP5JHmSPCICBIqdCGxtieJXoc1Y7q+sixbA8bnUJRWiF7+qZvV33RbXSXOtb2e8VG5viuMUY4wOeJABi2PDP8G/EDfNcTC1u649tDHtAlKA0t4pk2ttIPm9no1+CIz1UQr4F0Qkf5WXvuoI/KAeul9Ah4De2FPnLSzucu+hBVXxdSXdJ8pUL1M7on7DyzxcVrrmletqXBU7uolx8acF3PsRmQr6+h1s8PXpN/AmF3877afI7v7FCw5YH8qvtM9lMLXGWz2qgwVHssO3qtPWAy/EB1PBz4nqP2ixk687doBuSl0ffZMr6HUh7QE3skX7hIjidSqHV63Vohbn+M3fkj+aomSWI5okJvUZRa23s0K2sYmsb5fKLoun46GYZhQqzJyYzF6dGO/9OE5NU+jkUm9cuD+ieHZRmkQwZc7m+4u/0HPwqHfe3nhFPhAAAAAElFTkSuQmCC"
+              alt=""
+              title=""
+              width="30"
+              height="30"
+              target="_blank"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/user/TataMotorsGroup"
+            target="_blank"
+            rel="nofollow"
+            onclick="CommonDataLayer('SUVS','HARRIER','SocialShare_Youtube')"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAAAAAAeW/F+AAABj0lEQVQokdWSsWvCQBTGM2fLKjgGOjlIhpDRza3g5CIBcZCObv4Fbu3iIBQRXBxcnDJIB4cgCIEsAYcgHEIIcng8coSCQ3vvnbZ269KhX0jI3Y/v3XfvzjD+syrOY7vj9/r9J61+r+u3W42KSdRqjd+iZJ+yY6bFDuk+Dpe+jdRsLg75iZ8FFACFEoAQZ35i8RBx9TmRSoWkL0gJBb3FZYq4FjFZkIvzM6hfxGooP+aInWOOQynzcLkW7+gscAza7QInKtm8210lmSqv619eEXuloIVLNvHM+iBgKiSQ+4ZVMfWwmWeYdtOfxCdMeueWKlJ5XDSoDZ11Rnv4woCBr9jyRttcqpm74hitZOO6YbdHq5iJ4juai8XV2ipa0x0GjJLj9q9YcIlTMltPFymnnNgIobHDciwFkqf7A9p045R7Rk3dMuo4uSgFdljemlp9SRDdAEjNATQ2G/M043iggEdKEoLnaTig62C2xsEm3O6iKEZFcRTtwk0w69j6Mll2zXHcH3Kc+oNl/sXN/b0+Aeb3lSOXEjCAAAAAAElFTkSuQmCC"
+              alt=""
+              title=""
+              width="30"
+              height="30"
+              target="_blank"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid">
+        <div class="" style="margin-top: 40px; margin-bottom: 40px; " >
+          <div class="">
+          <a href="" style="border: 2px solid red; margin-left: 70px; font-size: 25px; padding: 20px 100px 10px 10px ; width: 500px;">Request a Call back</a>
+          <a href="" style="border: 2px solid red; margin-left: 150px; font-size: 25px; padding: 20px 130px 10px 10px ; width: 500px;">Book Now</a>
+          <a href="" style="border: 2px solid red; margin-left: 150px; font-size: 25px; padding: 20px 100px 10px 10px ; width: 500px;">Download</a>
+       </div>
+       
+    
+    </div>
+      </div>
+    </div>
+  </body>
+</html>
